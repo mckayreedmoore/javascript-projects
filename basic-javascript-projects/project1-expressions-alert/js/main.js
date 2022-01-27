@@ -15,3 +15,7 @@ document.write (jill); //writes one of the previously assigned variables
 window.alert (3 + 3); //demonstrates simple mathmatics is possible when giving values. 
 
 document.write(y.fontcolor ("blue"));
+
+function berate() {
+    document.getElementById ("buttonResult").innerHTML = "you really clicked the button even though you were asked not to.... wow. ";
+}
