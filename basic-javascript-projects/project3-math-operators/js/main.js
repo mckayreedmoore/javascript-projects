@@ -6,33 +6,38 @@ function additionDemo(){  //these first four functions show addition, subtractio
 
 function subtractionDemo(){
     var theSubtraction = 14-6;
-    document.getElementById("math2").innerHTML = ("14-6=" + theSubtraction);
+    var subProb = "14-6=";
+    document.getElementById("math2").innerHTML = (subProb + theSubtraction);
 }
 
 function multiplicationDemo(){
     var theMultiplication = 14 * 30;
-    
-    document.getElementById("math3").innerHTML = ("14*30=" + theMultiplication);
+    var multProb = "14*30=";
+    document.getElementById("math3").innerHTML = (multProb + theMultiplication);
 }
 
 function divisionDemo(){
     var theDivision = 130/6;
-    document.getElementById("math4").innerHTML = ("130/6=" + theDivision);
+    var divProb = "130/6=";
+    document.getElementById("math4").innerHTML = (divProb + theDivision);
 }
 
 function largeMathDemo(){ //this function shows a longer math problem
     var theAnswer = 11 * 6 / 15 - 3 + 30 * 2
-    document.getElementById("math5").innerHTML = "eleven ties six divided by fifteen minus three plus thirty times two is " + theAnswer;
+    var longProb = "eleven ties six divided by fifteen minus three plus thirty times two is "
+    document.getElementById("math5").innerHTML =  longProb + theAnswer;
 }
 
 function modulusOperator() { //this function gives you the remainder of a division problem
     var theModOp = 11 % 100;
-    document.getElementById("math6").innerHTML = "the remainder of 11 / 100 is ." + theModOp;
+    var modProb = "the remainder of 11 / 100 is ."
+    document.getElementById("math6").innerHTML =  modProb + theModOp;
 }
 
 function negationOperator() { // this function returns you the negation of an operator
     var initOperator = 11;
-    document.getElementById("math7").innerHTML = "the negation operator of 11 is " + -initOperator;
+    var negProb = "the negation operator of 11 is ";
+    document.getElementById("math7").innerHTML = negProb + -initOperator;
 }
 
 function incrementNumber() { //this functiono increments a variable by one
