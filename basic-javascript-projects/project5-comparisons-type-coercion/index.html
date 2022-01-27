@@ -1,0 +1,57 @@
+<!doctype html>
+    <head>
+        <meta charset = "uft-8">
+        <meta name = "viewport" content="width=device-width">
+        <title>project5-comparisons-type-coercion</title>
+        <script src="./js/main.js"></script>
+    </head>
+    <html lang="en">
+        <body>
+            <button  onclick="coercionDemo()">click this button for a demo</button>
+            <p id="coercion" >here is where the coercion will show</p>
+            <button onclick="typeOfDemo()">Click this button to see what data type 15 is.</button>
+            <p id="typeof"> here is where the data type will show</p>
+            
+            <button onclick="negInfinity(); posInfinity()">Press this button to get both positive and negative infinity</button>
+            <p id="negInfinity">here is where negative infinity will go!</p>
+            <p id="posInfinity">here is where positive infinity will go!</p>
+            <br>
+            <br>
+            <p style="color: blue;" id="booleanLogic" onclick="booleanLogic()">Here is where the boolean logic will display! Will it be true or false??!? Click to find out</p>
+        
+        
+            <script>
+                console.log(4*4); 
+                console.log(3>4);
+                document.write( 9==10 );
+                document.write( 9==9 );
+
+
+                //triple equal signs assignment
+                document.write(1 === 1);
+                document.write(1 === "2");
+                document.write(1 === "1");
+                document.write(1 === 2);
+            </script>
+            <br> <br>
+            <p>logical operators assignment</p>
+                
+            <script>
+                //logical operators assingment
+
+                    //and assignment
+                document.write(1 == "1" && 5 > 4);
+                document.write(1 === "1" && 5 > 4);
+                    //or assignment
+                document.write (1 > 2 || 3 > 1);
+                document.write (1 > 2 || 3 < 2);
+                    
+            </script>
+            <br>
+            <br>
+            <!-- not assignment -->
+            <button onclick="returnOp(); returnNorm();">Click this button to see the not operators do their work!</button>
+            <p id="not">Here is where false will appear</p>
+            <p id="norm">Here is the double false(true) will appear</p>
+        </body>
+    </html> 
