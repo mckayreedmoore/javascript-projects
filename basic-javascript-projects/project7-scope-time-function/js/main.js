@@ -36,7 +36,7 @@ function dateFunction() {
 }
 
 if (1 < 4) {
-    alert("1 is in fact greater than 4!");
+    alert("1 is in fact less than 4!");
 }
 
 
