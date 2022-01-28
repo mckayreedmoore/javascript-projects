@@ -1,0 +1,31 @@
+<!doctype html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>project7-scope-time-function</title> 
+        <script src="./js/main.js"></script>
+    </head>
+    <html lang="en">
+        <body>
+            <p id="globalVar" onclick="globalVar()" >Global Variable</p>
+            <button onclick="globalVar()">Click button</button>
+            <p>Local variable - nothing should show</p>
+            <p onclick="scopeError()" id="scopeError">Scope Error</p>
+            <br>
+            <br>
+            <br>
+            <h4>Date Function</h4>
+            <p id="date" onclick="dateFunction()">Click here!</p>
+            <button onclick="dateFunction()"></button>
+            <br> <br>
+            <p>Guess whether the flipped coin lands heads or tails! (heads/tails)</p>
+            <input id="guessInput" value="">
+            <button onclick="coinGame()">Submit</button>
+            <p id="answer"></p>
+
+
+            <p>Time of Day Check</p>
+            <button onclick="time_function()">Click here!</button>
+            <p id="time_of_day">The result will display here.</p>
+        </body>
+    </html>
