@@ -1,0 +1,61 @@
+<!doctype html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content="width=device-width">
+        <title>project10-loops-arrays</title>
+        <script src="./js/main.js" defer></script>
+    </head>
+    <html>
+        <body>
+            <p id="loop"></p>
+            <button onclick="call_loop()">Click here to execute the loop</button>
+       <br> <br>
+            <p>String Length Activity</p>
+           
+            <p id="theString"></p>
+            <p id="stringLength"></p>
+            <script>
+                var theString = "here is a string about beans";
+                console.log(theString);
+                var stringLength = theString.length;
+                
+                console.log(stringLength);
+                document.getElementById("theString").innerHTML = theString;
+                document.getElementById("stringLength").innerHTML = stringLength;
+            </script>
+
+            <br> <br>
+
+            <p id="array"></p>
+            <button onclick="array_function()">Click here for the array function!</button>
+
+            <br><br>
+            <p id="constant"></p>
+            <button onclick="constant_function()">Click here!</button>
+
+            <script> //this demonstrates the use of "let" over the "var" declaration. 
+                var beans = 10                  //here the window alert displays "10" for beans because the let variable change in 
+                { let bean = beans+10;}          // the block did not effect the window alert because the let variable declarationo was used
+                window.alert(beans);
+
+          
+            </script>
+
+            <p id="return"></p>
+            <script>
+                function returnRand(){
+                    return Math.random() * 100;
+                }
+                document.getElementById("return").innerHTML = returnRand();
+            </script>
+            <br> <br>
+            <h4>Here is the object assignment</h4>
+            
+            <p id="object_activity"></p>
+
+
+            <h4>Using continue and break statements</h4>
+            <button onclick="loopBreak()">Click to experience continue and break statements</button>
+            <p id="loopBreak">Here is where the magic will happen!</p>
+        </body>
+    </html>
