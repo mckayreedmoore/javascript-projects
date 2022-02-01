@@ -109,7 +109,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         x = x1, 
         y = y1; 
 
-
+        //draws win line on win condition
     function  animateLineDrawing() {
         const animationLoop = requestAnimationFrame(animateLineDrawing);
         c.clearRect (0, 0, 608, 608)
