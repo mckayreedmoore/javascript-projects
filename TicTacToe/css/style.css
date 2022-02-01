@@ -1,0 +1,32 @@
+    /*this centers the title*/
+h1 {
+    text-align: center;
+}
+    /*This sets the size of the content on our page and centers it*/
+.center-container {
+    width:608px;
+    margin: 0 auto;
+    margin-top: 50px;  
+}
+
+    /*hides the outside border edge and collapses borders into one border*/
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+    /*colors the tic-tac-toe bord, sets dimensions and removes default padding*/
+td {
+    cursor: pointer;
+    border: 4px solid rgba(212, 0, 0, 0.8);
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+/* brings canvas to the front, positions it to not move on page*/
+canvas {
+    position: absolute;
+    z-index:10;
+    pointer-events: none;
+}
