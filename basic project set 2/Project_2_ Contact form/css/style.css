@@ -1,0 +1,19 @@
+form {
+    border: black solid;
+    border-radius: 8px;
+    background-color: lightgrey;
+    width: 50%;
+}
+
+form label {
+    padding: 10px;
+    
+    color: rgb(66, 66, 66);
+}
+
+input [type=text] { 
+    width: 30%;
+    position: relative;
+    display:block;
+    text-align:center;
+}
