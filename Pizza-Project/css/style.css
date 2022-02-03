@@ -1,0 +1,69 @@
+body {
+    background-color:lightgray;
+}
+ h1 {
+    font-family: monospace;
+    color: darkred;
+    }
+h3 {
+    font-family: serif;
+    color: black;
+}
+
+div {
+    font-family: serif;
+    color: black;
+}
+
+#menuBG {
+    width:400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice{
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.column {
+    float:left;
+    width: 33.33%;
+    padding:10px;
+    height: 200px;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+
+}
+
+
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0; margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 100px;
+    width: 100px;
+    height: 40px;
+}
