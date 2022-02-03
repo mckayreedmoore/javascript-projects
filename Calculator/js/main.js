@@ -96,7 +96,7 @@ keys.addEventListener("click", (event) => {
         updateDisplay();
         return;
     }
-    if (target.classlist.contains("decimal")) {
+    if (target.classList.contains("decimal")) {
         inputDecimal(target.value);
         updateDisplay();
         return;
