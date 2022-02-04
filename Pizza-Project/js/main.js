@@ -45,6 +45,8 @@ function getTopping(runningTotal,text1) {
     } else {
         toppingTotal = 0;
     }
+
+    runningTotal = runningTotal + toppingTotal;
     console.log("total selected topping items:"+toppingCount.length);
     console.log(toppingCount +"topping - 1 free topping="+"$"+toppingTotal+".00");
     console.log("topping text1: " + text1);
