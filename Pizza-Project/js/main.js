@@ -1,8 +1,12 @@
+    // This generatres a receipt with all the specifications for the pizza, as well as 
+        //how much the pizza will cost
 function getReceipt() {
     var text1 = "<h3>You Ordered</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
+        //this gets all the sizes of the pizza and creates an array of them. 
     var sizeArray = document.getElementsByClassName("size");
+        //this for loop iteratres through the array of sizes, storing the one that is checked in var selectedSize
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
@@ -10,6 +14,8 @@ function getReceipt() {
         }
     }
 
+
+        //this determines the price for the sizes of pizza
     if (selectedSize === "Personal Pizza") {
         sizeTotal = 6;
     } else if (selectedSize === "Medium Pizza") {
@@ -28,6 +34,9 @@ function getReceipt() {
         console.log(sizeTotal);
     };
 
+
+    //this gets all the toppings and stores them in an array. From this it iterates through
+        //all the toppings storing those that are marked as checked. 
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
@@ -39,6 +48,7 @@ function getTopping(runningTotal,text1) {
             text1=text1+toppingArray[j].value+"<br>";
             }
     }
+        //this determines the price of the toppings. 
     var toppingCount = selectedTopping.length;
     if (toppingCount > 1) {
         toppingTotal = (toppingCount-1);
@@ -46,6 +56,7 @@ function getTopping(runningTotal,text1) {
         toppingTotal = 0;
     }
 
+        //this section is finalizes the total, and then prints out the receipt and associated price
     runningTotal = runningTotal + toppingTotal;
     console.log("total selected topping items:"+toppingCount.length);
     console.log(toppingCount +"topping - 1 free topping="+"$"+toppingTotal+".00");

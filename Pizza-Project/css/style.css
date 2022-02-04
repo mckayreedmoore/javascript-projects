@@ -16,13 +16,13 @@ div {
 }
 
 #menuBG {
-    width:400px;
+    width:600px;
     height: 470px;
     margin: 10px auto;
 }
 
 #frmMenu {
-    width: 400px;
+    width: 600px;
     height: 200px;
 }
 
@@ -35,7 +35,7 @@ div {
 
 .column {
     float:left;
-    width: 33.33%;
+    width: 30%;
     padding:10px;
     height: 200px;
 }
@@ -50,7 +50,7 @@ div {
 
 #showText {
     width: 200px;
-    height: 190px;
+    height: 190px; 
     margin: 0px auto;
     float: left;
 }
@@ -62,7 +62,7 @@ div {
 }
 
 #btnOrder {
-    margin: 10px 0px 0px 100px;
+    margin: 20px 40% 0 ;
     width: 100px;
     height: 40px;
 }
