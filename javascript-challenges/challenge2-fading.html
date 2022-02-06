@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>js challenge 2 fade</title>
+        <style>
+            
+            body{
+                opacity: 1;
+                transition: 1s opacity;
+            }
+            body.fade-out {
+                opacity: 0;
+                transition: none;
+            }
+
+            html {
+                background-color: gray;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <script>
+            document.body.classList.add('fade-out');
+            window.onload = function () {
+                document.body.classList.remove('fade-out');
+            };
+        </script>
+        <div>
+            <h1>behold the fade</h1>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+        </div>
+        <div>
+            <h1>behold the fade</h1>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+            <p>Behold the fade</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>working with XML</title>
+    </head>
+
+    <body>
+        <p id="xmlExample"></p>
+        <script>
+            var xmlParser, xmlDocument;
+
+            //creates a text string
+            var person = "<person>" +
+                "<title>McKay Moore</title>" +
+                "<mother>Dalynn Moore</mother>" + 
+                "<father>Dan Moore</father>" + 
+                "<birth>1998</birth>" + 
+                "</person>";
+            // creates a new xml dom parser
+            xmlParser = new DOMParser();
+
+            //creates a new xml dom object using the text string
+            xmlDocument = xmlParser.parseFromString(person, "text/xml");
+
+            document.getElementById("xmlExample").innerHTML = 
+                xmlDocument.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+        </script>
+    </body>
+</html>
