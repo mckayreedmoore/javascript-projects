@@ -9,12 +9,20 @@
             }
         </style>
         <script defer>
-            function validateForm () {
-                let x = document.forms["myForm"]["fname"];
-                if (x=="") {
-                    alert("All fields must be filled out");
-                    return false;
+            function validateForm (inputName) {
+                function innerValidate(inputName) {              
+                    let x = document.forms["myForm"][inputName].value;
+                    if (x=="") {
+                        alert("All fields must be filled out");
+                        return false;
+                    }
                 }
+
+                validateForm("phone");
+                validateForm("lname");
+                validateForm("fname");
+                validateForm("email");
+
             }
         </script>
         
@@ -25,11 +33,11 @@
         <div class="form-container">
             <form name="myForm" action="" method="post">
                 <label for="fname">First Name:</label> <br>
-                <input type="text" id="fname" value=""> <br>
+                <input type="text" name="fname" id="fname" value=""> <br>
                 <label for="lname">Last Name:</label> <br>
-                <input type="text" id="lname" value=""> <br>
+                <input type="text" name="lname" id="lname" value=""> <br>
                 <label for="email">Email Address:</label> <br>
-                <input type="text" id="email" value=""> <br>
+                <input type="text" name="email" id="email" value=""> <br>
                 <label for="phone">Phone Number:</label> <br>
                 <input type="text" name="phone" id="phone" value=""> <br>
                 
