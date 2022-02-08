@@ -9,6 +9,7 @@
             }
         </style>
         <script defer>
+            
             function validateForm (inputName) {
                 function innerValidate(inputName) {              
                     let x = document.forms["myForm"][inputName].value;
@@ -18,12 +19,13 @@
                     }
                 }
 
-                validateForm("phone");
-                validateForm("lname");
-                validateForm("fname");
-                validateForm("email");
-
+                innerValidate("fname");
+                innerValidate("phone");
+                innerValidate("lname");
+                innerValidate("email");
+                return true;
             }
+
         </script>
         
     </head>
@@ -31,7 +33,7 @@
         <h1>The Form:</h1>
         <p>Note: You cannot leave the phone field empty.</p>
         <div class="form-container">
-            <form name="myForm" action="" method="post">
+            <form name="myForm" action="" method="post" onsubmit="validateForm()">
                 <label for="fname">First Name:</label> <br>
                 <input type="text" name="fname" id="fname" value=""> <br>
                 <label for="lname">Last Name:</label> <br>

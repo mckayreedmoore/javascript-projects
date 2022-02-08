@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>json challenge</title>
+    </head>
+    <body>
+        <p id="object"></p>
+        <p id="jsonString">Here is where it will go</p>
+        <p id="parsedString"></p>
+        <p id="name">Here is where the name should appear</p>
+        <script>
+            var object = {color: "orange", animal: "cat", claws: "yes", teeth: "yes"}
+            var jsonString = JSON.stringify(object);
+            document.getElementById("object").innerHTML = object.animal;
+            document.getElementById("jsonString").innerHTML = jsonString;
+            var parsedString = JSON.parse(jsonString);
+            document.getElementById("parsedString").innerHTML = parsedString.animal;
+
+
+            localStorage.setItem("name", "joe");
+            document.getElementById("name").innerHTML = localStorage.getItem("name");
+        </script>
+    </body>
+</html>

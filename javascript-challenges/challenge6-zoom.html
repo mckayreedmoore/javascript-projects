@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>challenge6 zoom</title>
+
+        <style>
+            @keyframes zoomy {
+                0% { transform: scale(1,1);}
+                50% { transform: scale(1.6, 1.6);}
+                100% { transform: scale(1,);}
+            }
+
+            .img {
+                animation-name: zoomy;
+                animation-duration: 6s;
+               
+            }
+          
+       
+        </style>
+
+    
+    </head>
+        <h1>zoom in and out effect</h1>
+    <body>
+        <div>
+            <img class="img" src="water-droplet.jpg" alt="this is a picture of a water droplet that will zoom in and out">
+        </div>
+    </body>
+</html>
